@@ -19,10 +19,10 @@ public class S11Controller {
     public String index(){
 
         User user = new User();
-        user.setName("祁大聪讲编程");
+        user.setName("Tao");
         user.setBirthday(new Date());
-        user.setAge(18);
-        user.setAddress("Beijing");
+        user.setAge(23);
+        user.setAddress("Hangzhou");
 
         return JsonRender.success(user);
     }

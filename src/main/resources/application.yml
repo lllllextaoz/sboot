@@ -1,7 +1,7 @@
 # 整合框架的一些配置
 
 server:
-  port: 8080
+  port: 80
 
 spring:
   # FreeMarker
