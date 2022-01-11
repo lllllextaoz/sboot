@@ -10,7 +10,6 @@ import java.io.IOException;
 import java.util.Properties;
 
 /**
- * User: 祁大聪
  * 固定写法，可以放到自己的util包中，供平时使用
  */
 public class YmlResourceFactory extends DefaultPropertySourceFactory {

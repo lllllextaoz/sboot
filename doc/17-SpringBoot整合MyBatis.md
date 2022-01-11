@@ -35,5 +35,4 @@
 	     修改IDEA对Spring的验证级别即可：File ——》Settings ——》搜索 Inspections ——》找到Spring ——》修改Severity 为 warning 即可
 	
     
-## 祁大聪讲编程
 

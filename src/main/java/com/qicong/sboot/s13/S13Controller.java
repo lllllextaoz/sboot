@@ -7,9 +7,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import java.util.*;
 
-/**
- * User: 祁大聪
- */
+
 @Controller
 @RequestMapping("s13")
 public class S13Controller {
@@ -18,7 +16,7 @@ public class S13Controller {
     public ModelAndView index(){
         ModelAndView mv = new ModelAndView("s13");
         User user = new User();
-        user.setName("祁大聪讲编程");
+        user.setName("TTT");
         mv.addObject("user",user);
 
         String school = "清华";
@@ -28,7 +26,7 @@ public class S13Controller {
         Map<String, User> userMap = new HashMap<String, User>();
         for(int i = 0; i < 10; i++){
             User tmpUser = new User();
-            tmpUser.setName("祁大聪讲编程 - " + i);
+            tmpUser.setName("TTT - " + i);
             userList.add(tmpUser);
 
             userMap.put("user-"+i, tmpUser);

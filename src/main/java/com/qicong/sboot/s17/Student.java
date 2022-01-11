@@ -1,7 +1,6 @@
 package com.qicong.sboot.s17;
 
 /**
- * User: 祁大聪
  * ORM
  */
 public class Student {

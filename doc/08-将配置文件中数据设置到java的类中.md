@@ -19,4 +19,3 @@
         @PropertySource(value = "classpath:resource.yml" , factory = YmlResourceFactory.class)
 	4、创建YmlResourceFactory.java
 	
-## 祁大聪讲编程

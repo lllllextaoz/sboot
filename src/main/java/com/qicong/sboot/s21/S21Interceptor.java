@@ -6,9 +6,7 @@ import org.springframework.web.servlet.ModelAndView;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-/**
- * User: 祁大聪
- */
+
 public class S21Interceptor implements HandlerInterceptor {
 
     //在请求到Controller之前调用

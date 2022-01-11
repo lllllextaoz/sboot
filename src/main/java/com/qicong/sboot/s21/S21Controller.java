@@ -5,9 +5,7 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-/**
- * User: 祁大聪
- */
+
 @Controller
 @RequestMapping("s21")
 public class S21Controller {

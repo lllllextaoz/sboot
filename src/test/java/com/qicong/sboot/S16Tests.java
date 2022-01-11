@@ -10,9 +10,7 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import java.util.List;
 import java.util.Map;
 
-/**
- * User: 祁大聪
- */
+
 @SpringBootTest
 public class S16Tests {
 

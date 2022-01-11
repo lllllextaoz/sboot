@@ -7,9 +7,6 @@ import org.springframework.web.servlet.ModelAndView;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-/**
- * User: 祁大聪
- */
 @ControllerAdvice
 public class S22ExceptionHandler {
 

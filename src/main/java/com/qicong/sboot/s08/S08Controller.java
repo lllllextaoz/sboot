@@ -6,9 +6,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-/**
- * User: 祁大聪
- */
+
 @Controller
 @RequestMapping("s08")
 public class S08Controller {

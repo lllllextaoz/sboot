@@ -5,9 +5,7 @@ import org.springframework.stereotype.Component;
 
 import java.util.Date;
 
-/**
- * User: 祁大聪
- */
+
 @Component
 public class S23TaskSchedule {
 

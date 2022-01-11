@@ -6,9 +6,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.Date;
 
-/**
- * User: 祁大聪
- */
+
 @Controller
 @RequestMapping("s11")
 public class S11Controller {

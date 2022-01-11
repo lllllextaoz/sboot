@@ -7,9 +7,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import java.util.List;
 
-/**
- * User: 祁大聪
- */
+
 @Controller
 @RequestMapping("s17")
 public class S17Controller {

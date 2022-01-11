@@ -8,5 +8,4 @@
 		File——》Settings——》Editor——》File Encodings ——》改成UTF-8
 	3、启动运行
     
-## 祁大聪讲编程
 	

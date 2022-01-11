@@ -9,5 +9,4 @@
 		3.1、@EnableAutoConfiguration
 		3.2、@ComponentScan
 	
-## 祁大聪讲编程
 	

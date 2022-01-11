@@ -2,9 +2,7 @@ package com.qicong.sboot.s11;
 
 import com.alibaba.fastjson.JSONObject;
 
-/**
- * User: 祁大聪
- */
+
 public class JsonRender {
 
     public static final Integer SUCCESS = 0;

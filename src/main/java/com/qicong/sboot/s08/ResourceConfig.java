@@ -4,9 +4,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
 
-/**
- * User: 祁大聪
- */
+
 @Configuration
 @ConfigurationProperties(prefix = "com.wesite")
 @PropertySource(value = "classpath:resource.yml", factory = YmlResourceFactory.class)

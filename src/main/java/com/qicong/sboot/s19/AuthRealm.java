@@ -8,9 +8,6 @@ import org.apache.shiro.authz.AuthorizationInfo;
 import org.apache.shiro.realm.AuthorizingRealm;
 import org.apache.shiro.subject.PrincipalCollection;
 
-/**
- * User: 祁大聪
- */
 public class AuthRealm extends AuthorizingRealm {
 
     //返回用户的角色和权限

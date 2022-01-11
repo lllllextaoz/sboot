@@ -6,9 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.jdbc.core.JdbcTemplate;
 
-/**
- * User: 祁大聪
- */
+
 @SpringBootTest
 public class S17StudentTests {
 

@@ -8,9 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
-/**
- * User: 祁大聪
- */
+
 @Controller
 @RequestMapping("s19")
 public class S19LoginController {

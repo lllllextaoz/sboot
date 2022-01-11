@@ -11,9 +11,7 @@ import org.springframework.context.annotation.Configuration;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-/**
- * User: 祁大聪
- */
+
 @Configuration
 public class ShiroConfig {
 

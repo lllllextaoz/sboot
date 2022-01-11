@@ -10,9 +10,7 @@ import org.springframework.web.servlet.i18n.SessionLocaleResolver;
 
 import java.util.Locale;
 
-/**
- * User: 祁大聪
- */
+
 @Configuration
 public class I18nLocaleConfig {
     //默认解析器，设置为汉语
