@@ -16,12 +16,12 @@
 			messages:
 			    basename: i18n/messages
 			    encoding: UTF-8
-	3、借助FreeMarker实现国际化
+	3、借助FreeMarker实现国际化  
         3.1、在html头部添加<#import "spring.ftl" as s>
         3.2、使用<@s.message code="welcome" />即可
 	4、添加拦截器，根据我们选择的语言切换国际化
 		4.1、I18nLocaleConfig.java
 
-
+	注：修改两处地方 properties和html中的lang
 
 
