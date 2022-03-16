@@ -18,6 +18,23 @@ public class S19LoginController {
         return new ModelAndView("s19-login");
     }
 
+//    @GetMapping("/login")
+//    @ResponseBody
+//    public String login(@RequestParam String username, @RequestParam String password, HttpSession session,
+//                        RedirectAttributes attributes) {
+//
+////        User user = userService.login(username, password);
+////
+////        if (username.equals("admin") &&password.equals("admin")) {
+////            return "sccess";
+////        } else {
+////            attributes.addFlashAttribute("message", "用户名或密码错误！");
+////            return "false";
+////        }
+//
+//        return "200";
+//    }
+
     @RequestMapping("dologin")
     @ResponseBody
     public String dologin(String username, String password){
@@ -25,11 +42,24 @@ public class S19LoginController {
         UsernamePasswordToken token = new UsernamePasswordToken(username, password);
         try{
             subject.login(token);
-            return "success";
+            return "200";
         }catch (Exception e){
             e.printStackTrace();
             return "failure";
         }
+    }
+    @RequestMapping("logintest")
+    @ResponseBody
+    public String logintest(String username, String password){
+//        Subject subject = SecurityUtils.getSubject();
+//        UsernamePasswordToken token = new UsernamePasswordToken(username, password);
+//        try{
+//            subject.login(token);
+            return "200";
+//        }catch (Exception e){
+//            e.printStackTrace();
+//            return "failure";
+//        }
     }
 
     @RequestMapping("logout")

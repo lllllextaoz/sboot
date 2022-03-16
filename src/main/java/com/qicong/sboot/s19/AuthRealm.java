@@ -7,6 +7,7 @@ import org.apache.shiro.authc.SimpleAuthenticationInfo;
 import org.apache.shiro.authz.AuthorizationInfo;
 import org.apache.shiro.realm.AuthorizingRealm;
 import org.apache.shiro.subject.PrincipalCollection;
+import org.springframework.beans.factory.annotation.Autowired;
 
 public class AuthRealm extends AuthorizingRealm {
 
@@ -16,6 +17,9 @@ public class AuthRealm extends AuthorizingRealm {
         //设置用户的角色权限
         return null;
     }
+    @Autowired
+    AuthService authService;
+
 
     //实现用户的登录行为
     @Override
@@ -26,11 +30,14 @@ public class AuthRealm extends AuthorizingRealm {
         System.out.println("username = " + username + ", password = " + password);
         //去访问数据库，进行用户的用户名、密码的校验
 
-        //直接写死了
-        if("qicong".equals(username) && "qicong".equals(password)){
+        if ("admin".equals(username) && password.equals(authService.getPassword(username))){
             return new SimpleAuthenticationInfo(username,password,getName());
-        }
-        throw new AuthenticationException();
+        }throw new AuthenticationException();
+//        //直接写死了
+//        if("admin".equals(username) && "admin123".equals(password)){
+//            return new SimpleAuthenticationInfo(username,password,getName());
+//        }
+//        throw new AuthenticationException();
     }
 
 }

@@ -9,7 +9,7 @@ import java.util.Date;
 @Component
 public class S23TaskSchedule {
 
-//    @Scheduled(fixedRate = 1000) //1000毫秒=1秒
+    @Scheduled(fixedRate = 1000) //1000毫秒=1秒
     public void testTask(){
         System.out.println("current time = " + new Date());
     }

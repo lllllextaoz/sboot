@@ -24,4 +24,9 @@ public class S08Controller {
         System.out.println("resource.url = " + resource.getUrl());
         return "success" + name + " , " + resource.getName() + " == ";
     }
+    @RequestMapping("login")
+    @ResponseBody
+    public String login(){
+        return "200";
+    }
 }
