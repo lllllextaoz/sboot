@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>菜鸟教程(runoob.com)</title>
+</head>
+<body>
+
+<script>
+    function changeImage()
+    {
+        element=document.getElementById('myimage')
+        if (element.src.match("bulbon"))
+        {
+            element.src="/images/pic_bulboff.gif";
+        }
+        else
+        {
+            element.src="/images/pic_bulbon.gif";
+        }
+    }
+</script>
+<p id="demo">点击灯泡就可以打开或关闭这盏灯</p>
+<p id="demo2">点击灯泡就可以打开或关闭这盏灯</p>
+<p id="demo3">点击灯泡就可以打开或关闭这盏灯</p>
+<p id="demo4">点击灯泡就可以打开或关闭这盏灯</p>
+<p id="demo5">点击灯泡就可以打开或关闭这盏灯</p>
+
+</body>
+</html>
+
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>菜鸟教程(runoob.com)</title>
+</head>
+<body>
+
+<script>
+    var text = '{ "sites" : [' +
+        '{ "name":"Runoob" , "url":"www.runoob.com" },' +
+        '{ "name":"Google" , "url":"www.google.com" },' +
+        '{ "name":"Taobao" , "url":"www.taobao.com" } ]}';
+
+    var obj = JSON.parse(text);
+
+    var text = '{ "sites" : [' +
+        '{ "name":"Runoob" , "url":"www.runoob.com" },' +
+        '{ "name":"Google" , "url":"www.google.com" },' +
+        '{ "name":"Taobao" , "url":"www.taobao.com" } ]}';
+
+    obj = JSON.parse(text);
+
+    let array = [
+        {
+            id: 123,
+            value:0
+        },
+        {
+            id: 123,
+            value:111
+        },
+        {
+            id: 123,
+            value:444
+        },
+        {
+            id: 234,
+            value:222
+        },
+        {
+            id: 234,
+            value:1
+        },
+        {
+            id: 234,
+            value:444
+        }
+    ];
+    // array[0].value=3;
+    // array.pop(1);
+
+    for (let i = 0; i < array.length; i++) {
+        console.log(i);
+        for (let j = i; j < array.length; j++) {
+            if (array[i].id===array[j].id){
+                array[i].value+=array[j].value;
+                array.splice(j,1)
+            }
+            console.log("2"+i);
+        }
+        console.log("3"+i);
+    }
+
+
+    // for (let i = 0; i < array.length; i++) {
+    //     var aid = array[i].id;
+    //     if (i+1 < array.length){
+    //         for (let j = i+1; j < array.length; j++) {
+    //             var jvalue = array[j].value;
+    //             if (aid===array[j].id){
+    //                 array[i].value+=jvalue;
+    //                 array.splice(j,1)
+    //             }
+    //         }
+    //     }
+    // }
+
+
+    document.getElementById("demo").innerHTML = obj.sites[1].name + " " + obj.sites[1].url;
+    document.getElementById("demo2").innerHTML = array.toString();
+    document.getElementById("demo3").innerHTML = JSON.stringify(array);
+    document.getElementById("demo4").innerHTML = JSON.stringify(array.filter(function({id,value}){
+        return id >= 222;
+    }));
+    document.getElementById("demo5").innerHTML = JSON.stringify(array.filter((function(element,index,self){
+        return self.indexOf(element) == index;
+    })));
+</script>
+</body>
+</html>
