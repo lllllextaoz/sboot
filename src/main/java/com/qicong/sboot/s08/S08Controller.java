@@ -6,12 +6,11 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-
 @Controller
 @RequestMapping("s08")
 public class S08Controller {
 
-    @Value("${com.qicong.name:QiDaCong}")
+    @Value("${com.wesite.name:QiDaCong}")
     public String name;
 
     @Autowired
